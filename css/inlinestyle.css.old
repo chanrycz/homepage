@@ -1,0 +1,746 @@
+.img-fluid {
+	max-width: 70vmin;
+	width: 100%;
+	height: auto
+}
+
+img:not(.logo):not(.pulse1):not(.pulse2) {
+	opacity: 0;
+	will-change: opacity;
+	-webkit-transition: opacity .4s linear .4s;
+	-o-transition: opacity .4s linear .4s;
+	-moz-transition: opacity .4s linear .4s;
+	transition: opacity .4s linear .4s
+}
+
+.loaded:not(.logo):not(.pulse1):not(.pulse2) {
+	opacity: 1
+}
+
+.project-link {
+	width: 100%;
+	height: 100%;
+	position: absolute
+}
+
+.h1,
+h1 {
+	position: relative;
+	font-family: "Google Sans Display", sans-serif;
+	font-size: clamp(38px, min(14vw, 8vh), 4.5rem);
+	font-weight: 700;
+	line-height: 1;
+	color: #333
+}
+
+.h2,
+h2 {
+	position: relative;
+	font-family: "Google Sans Display", sans-serif;
+	font-weight: 700;
+	font-size: clamp(25px, min(10vw, 5vh), 2.7rem);
+	line-height: 1.2;
+	color: #333;
+	margin: 2rem 0
+}
+
+.h3,
+h3 {
+	font-family: "Google Sans Display", sans-serif;
+	font-weight: 700;
+	font-size: 1.925rem;
+	line-height: 1.25;
+	color: #333;
+	margin: 1.5rem 0
+}
+
+.h4,
+h4 {
+	font-family: "Google Sans Display", sans-serif;
+	font-weight: 600;
+	font-size: 1.525rem;
+	line-height: 1.2;
+	color: #333;
+	margin: 1.5rem 0
+}
+
+.h5,
+h5 {
+	font-family: "Google Sans Display", sans-serif;
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.2;
+	color: #333;
+	margin: 1.2rem 0
+}
+
+.h6,
+h6 {
+	font-family: "Google Sans Display", sans-serif;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	color: #333;
+	margin: 1rem 0;
+	text-transform: uppercase
+}
+
+.h1 a,
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit
+}
+
+.h1 a:hover,
+.h2 a:hover,
+.h3 a:hover,
+.h4 a:hover,
+.h5 a:hover,
+.h6 a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	text-decoration: none
+}
+
+p {
+	margin-bottom: 1rem
+}
+
+ul {
+	list-style: none;
+	padding-left: 0
+}
+
+a {
+	color: #007bff;
+	will-change: color;
+	-webkit-transition: color .4s ease-out;
+	-o-transition: color .4s ease-out;
+	-moz-transition: color .4s ease-out;
+	transition: color .4s ease-out
+}
+
+a:focus,
+a:hover {
+	color: #007bff;
+	outline: 0
+}
+
+a:focus {
+	text-decoration: none
+}
+
+.lead {
+	line-height: 1.9;
+	font-size: 1.125rem
+}
+
+.size-sm {
+	font-size: .875rem
+}
+
+.bg-light {
+	background: #f5f5f5!important
+}
+
+.bg-dark {
+	background: #1d1d1d!important;
+	color: #86878a
+}
+
+.bg-primary {
+	background: #007bff!important;
+	color: #fff
+}
+
+.text-dark {
+	color: #333!important
+}
+
+.text-white {
+	color: #fff!important
+}
+
+.text-gray {
+	color: #767676!important
+}
+
+.text-muted {
+	color: #bbb!important
+}
+
+.text-primary {
+	color: #007bff!important
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 0 3rem 0 .8rem;
+	margin-left: 2.2rem;
+	height: 5.5rem;
+	-webkit-backdrop-filter: blur(8px) saturate(160%);
+	backdrop-filter: blur(8px) saturate(160%)
+}
+
+.navbar:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -2.2rem;
+	width: -webkit-calc(2.2rem - 3px);
+	width: -moz-calc(2.2rem - 3px);
+	width: calc(2.2rem - 3px);
+	height: 5.5rem;
+	-webkit-backdrop-filter: blur(8px) saturate(160%);
+	backdrop-filter: blur(8px) saturate(160%)
+}
+
+.navbar,
+.navbar:after {
+	background: rgb(251 251 251 / 87%);
+	border-bottom: 1px solid #dedede
+}
+
+.navbar-white.navbar,
+.navbar-white.navbar:after {
+	background: rgb(41 41 41 / 87%);
+	border-bottom: 1px solid #484848
+}
+
+.navbar,
+.navbar a,
+.navbar a:focus,
+.navbar a:hover {
+	color: #343434
+}
+
+.navbar-white.navbar,
+.navbar-white.navbar a,
+.navbar-white.navbar a:focus,
+.navbar-white.navbar a:hover {
+	color: #fff
+}
+
+.toggler {
+	position: absolute;
+	right: 0;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	height: -webkit-max-content;
+	height: -moz-max-content;
+	height: max-content;
+	padding: 0;
+	background: 0 0;
+	border: 0;
+	margin-top: -.25rem;
+	will-change: color;
+	-webkit-transition: color .4s ease;
+	-o-transition: color .4s ease;
+	-moz-transition: color .4s ease;
+	transition: color .4s ease
+}
+
+.toggler:focus {
+	outline: 0
+}
+
+.toggler:hover {
+	color: #007bff
+}
+
+a.navbar-brand {
+	position: static;
+	font-family: "Google Sans Display", sans-serif;
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-right: 4rem;
+	padding: 0;
+	line-height: 1;
+	float: left;
+	color: #343434
+}
+
+a.navbar-brand:hover {
+	color: #343434
+}
+
+.navbar-white a.navbar-brand {
+	color: #fff
+}
+
+.navbar-white a.navbar-brand:hover {
+	color: #fff
+}
+
+.navbar .container {
+	width: auto
+}
+
+.navbar ul {
+	margin-bottom: 0
+}
+
+.navbar-desktop .email,
+.navbar-desktop .phone {
+	float: left;
+	font-family: "Google Sans Display", sans-serif;
+	position: relative;
+	top: .3rem;
+	margin-right: 4rem
+}
+
+.navbar-bottom {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	padding: 0 3rem .5rem 3rem;
+	z-index: 11
+}
+
+.navbar-bottom {
+	font-family: "Google Sans Display", sans-serif;
+	color: #333
+}
+
+.navbar-bottom .social {
+	position: relative;
+	z-index: 20;
+	float: left
+}
+
+.navbar-bottom .copy {
+	float: right;
+	position: relative;
+	z-index: 11
+}
+
+.navbar-bottom .social-icons li {
+	float: left
+}
+
+.social-icons li:not(:last-child) {
+	margin-right: 2rem
+}
+
+.social-icons li a {
+	display: block;
+	font-size: 1.45rem;
+	color: #333;
+	will-change: color;
+	-webkit-transition: color .4s ease;
+	-o-transition: color .4s ease;
+	-moz-transition: color .4s ease;
+	transition: color .4s ease
+}
+
+.social-icons li a:hover {
+	color: #007bff
+}
+
+.navbar-bottom-white,
+.navbar-bottom-white .social-icons li a {
+	color: #fff
+}
+
+.progress-nav {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 11;
+	top: 0;
+	left: 2rem;
+	height: 100%;
+	width: 3px
+}
+
+.navbar-desktop:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: #fff;
+	will-change: background;
+	-webkit-transition: background .4s ease;
+	-o-transition: background .4s ease;
+	-moz-transition: background .4s ease;
+	transition: background .4s ease
+}
+
+.click-capture {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 140;
+	background: rgba(0, 0, 0, .5);
+	will-change: opacity;
+	-webkit-transition: opacity .6s ease-out;
+	-o-transition: opacity .6s ease-out;
+	-moz-transition: opacity .6s ease-out;
+	transition: opacity .6s ease-out
+}
+
+.navbar-mobile {
+	display: block;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	-webkit-align-items: baseline;
+	-moz-box-align: baseline;
+	align-items: baseline;
+	-ms-flex-wrap: unset;
+	-webkit-flex-wrap: unset;
+	flex-wrap: unset;
+	padding: 3.9rem 2.6rem 1.3rem 2.6rem;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 150;
+	background-color: rgba(255, 255, 255, .65);
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	display: -ms-flexbox;
+	-webkit-box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	flex-direction: column;
+	will-change: transform, -webkit-transform, -moz-transform, -o-transform;
+	-webkit-transition: transform .6s ease;
+	-o-transition: transform .6s ease;
+	-moz-transition: transform .6s ease;
+	-webkit-transition: -webkit-transform .6s ease;
+	transition: -webkit-transform .6s ease;
+	-o-transition: -o-transform .6s ease;
+	-moz-transition: transform .6s ease, -moz-transform .6s ease;
+	transition: transform .6s ease;
+	transition: transform .6s ease, -webkit-transform .6s ease, -moz-transform .6s ease, -o-transform .6s ease;
+	border: 1px solid rgba(255, 255, 255, .18);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px)
+}
+
+.navbar-white.navbar-mobile {
+	border: 1px solid rgba(0, 0, 0, .65)
+}
+
+.navbar-mobile .close {
+	position: absolute;
+	right: 1rem;
+	top: .5rem;
+	font-size: 3rem;
+	color: #333;
+	will-change: color;
+	-webkit-transition: color .4s ease;
+	-o-transition: color .4s ease;
+	-moz-transition: color .4s ease;
+	transition: color .4s ease;
+	cursor: pointer;
+	opacity: 1;
+	z-index: 175
+}
+
+.navbar-white .close {
+	color: #fff
+}
+
+.navbar-mobile .close:hover {
+	opacity: 1;
+	color: #007bff
+}
+
+@media (min-width:576px) {
+	.navbar-mobile {
+		width: 50%;
+		max-width: 32rem
+	}
+}
+
+.navbar-mobile-footer {
+	margin-top: auto;
+	color: #333;
+	position: relative;
+	z-index: 175
+}
+
+.navbar-white .navbar-mobile-footer {
+	color: #fff
+}
+
+.navbar-nav-mobile {
+	display: block;
+	font-size: 2.5vh;
+	margin-top: 2vh;
+	font-weight: 500;
+	position: relative;
+	z-index: 175;
+	padding-left: 1.8rem
+}
+
+.navbar-nav-mobile li {
+	margin-bottom: 4.4vmin
+}
+
+.navbar-nav-mobile li a {
+	color: #333
+}
+
+.navbar-nav-mobile li .active,
+.navbar-nav-mobile li a:focus,
+.navbar-nav-mobile li a:hover {
+	color: #007bff
+}
+
+.nav-link {
+	padding: 0
+}
+
+.menu-is-open {
+	overflow: hidden
+}
+
+.menu-is-open .navbar-mobile {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0)
+}
+
+.menu-is-open .click-capture {
+	visibility: visible;
+	opacity: .75
+}
+
+.navbar-white .social-icons span {
+	color: #fff
+}
+
+.navbar-white .social-icons span:hover {
+	color: #4ea3ff
+}
+
+.navbar-white .toggler {
+	color: #fff
+}
+
+.navbar-white .toggler:hover {
+	color: #007bff
+}
+
+h1+.line {
+	margin-top: 15vh;
+	width: 0;
+	border-top: 3px solid #007bff;
+	will-change: width;
+	-webkit-transition: width .4s ease;
+	-o-transition: width .4s ease;
+	-moz-transition: width .4s ease;
+	transition: width .4s ease
+}
+
+h1+.line.active {
+	width: 25%
+}
+
+.section {
+	position: relative;
+	padding: 9rem 0
+}
+
+.section h2 {
+	margin-top: 0
+}
+
+.pp-section {
+	background: #fff;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 8rem 0 6rem
+}
+
+.section:not(#home) .intro {
+	opacity: 0;
+	-webkit-transform: translateY(-40px);
+	-ms-transform: translateY(-40px);
+	-moz-transform: translateY(-40px);
+	-o-transform: translateY(-40px);
+	transform: translateY(-40px);
+	will-change: opacity, transform, backdrop-filter, -webkit-transform, -moz-transform, -o-transform, -webkit-backdrop-filter;
+	-webkit-transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease;
+	-o-transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease;
+	-moz-transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease;
+	-webkit-transition: opacity .7s ease, -webkit-transform .7s ease, -webkit-backdrop-filter .7s ease;
+	transition: opacity .7s ease, -webkit-transform .7s ease, -webkit-backdrop-filter .7s ease;
+	-o-transition: opacity .7s ease, backdrop-filter .7s ease, -o-transform .7s ease;
+	-moz-transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease, -moz-transform .7s ease;
+	transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease;
+	transition: opacity .7s ease, transform .7s ease, backdrop-filter .7s ease, -webkit-transform .7s ease, -moz-transform .7s ease, -o-transform .7s ease, -webkit-backdrop-filter .7s ease
+}
+
+.section:not(#home) .intro.animate {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0)
+}
+
+.section .intro {
+	-webkit-backdrop-filter: blur(1.5px);
+	backdrop-filter: blur(1.5px)
+}
+
+.section .remove-blur {
+	-webkit-backdrop-filter: blur(0);
+	backdrop-filter: blur(0)
+}
+
+.container {
+	padding-left: 70px
+}
+
+.container.project {
+	margin-left: 0;
+	padding-left: 0
+}
+
+.pp-scrollable {
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto
+}
+
+.pp-scrollable .intro {
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	padding-top: 5.5rem
+}
+
+.pp-scrollable .intro:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle
+}
+
+.pp-scrollable:not([id^=proj-]) .scroll-wrap {
+	width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	margin-left: -4px;
+	padding: 0;
+	padding-bottom: 5rem;
+	padding-top: 2rem
+}
+
+[id^=proj-] .scroll-wrap {
+	width: -webkit-calc(100% - 2rem);
+	width: -moz-calc(100% - 2rem);
+	width: calc(100% - 2rem);
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	left: 2rem;
+	margin-top: -5rem;
+	padding: 1rem 0 1rem 20px;
+	-webkit-backdrop-filter: blur(100px);
+	backdrop-filter: blur(100px);
+	background: rgb(251 251 251 / 87%)
+}
+
+.navbar-is-white[id^=proj] .scroll-wrap {
+	background: rgb(41 41 41 / 87%)
+}
+
+.proj-bg-image {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: -2
+}
+
+.proj-bg-image:not(.center) {
+	-o-object-position: center top;
+	   object-position: center top
+}
+
+.proj-bg-image.center {
+	-o-object-position: center center;
+	   object-position: center center
+}
+
+.section .intro:not(.remove-blur) .proj-bg-image:before {
+	opacity: .35
+}
+
+.proj-bg-image:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	opacity: 0;
+	will-change: opacity;
+	-webkit-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+	overflow: hidden
+}
+
+.navbar-is-white .proj-bg-image:before {
+	background-color: #333
+}
